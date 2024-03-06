@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(https://html.com/wp-content/uploads/html-tutorial-beginners-header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+nav{
+    background-color: aliceblue;
+    box-shadow: 3px 3px 5px black;    
+  
+
+}
+nav ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+   
+}
+nav li{
+    height: 50px;
+    padding:2px 3px;
+    display: flex;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+    align-items: center;
+    padding:0 3px
+}
+nav a:hover{
+    background-color: beige;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+
+.sidebar{
+    display:none;
+    position: fixed;
+    top:0;
+    right:0;
+    background-color: aliceblue;
+    z-index: 5;
+    height: 100vh;
+    width: 250px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-shadow: 3px 3px 5px black;
+
+
+}
+nav .menu{
+    display: none;
+}
+@media(max-width:800px){
+   nav .menu{
+        display: flex;
+    }
+    
+}
+
+    
+.sidebar li{
+    width: 100%; 
+}
+.sidebar li:hover{
+    background-color: rgb(246, 243, 237);
+}
